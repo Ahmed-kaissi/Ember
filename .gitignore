@@ -1,13 +1,78 @@
+# Python bytecode
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Python environments
 .venv/
 venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Secrets and credentials
 .env
 .env.*
 !.env.example
+.envrc
+.streamlit/secrets.toml
+.pypirc
+
+# Python testing and tooling
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging and build output
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Logs and databases
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Editors
 .vscode/
 .idea/
-*.log
+.spyderproject
+.spyproject
+.ropeproject/
+
+# Operating systems
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Temporary files
+tempCodeRunnerFile.py
+
+# Documentation build output
+docs/_build/
+site/
+
+# Other Python tools
+.ipynb_checkpoints/
+.pybuilder/
+.pytest_cache/
+.ruff_cache/
+.streamlit/secrets.toml
