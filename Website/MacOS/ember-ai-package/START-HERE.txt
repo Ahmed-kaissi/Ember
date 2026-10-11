@@ -1,0 +1,72 @@
+EMBER / LEARN A LITTLE, LEVEL UP
+
+WHAT'S NEW
+Ember is a local-first learning companion for Ollama. Choose a mini lesson,
+quiz sprint, flashcard round, or teach-it-back challenge. Finish a round to earn
+XP and build a daily streak. Free chat, saved memories, and local model controls
+are still available.
+
+START IT
+1. Install Ollama from https://ollama.com and make sure it is running.
+2. Unzip the complete Ember package into a folder. Keep the included files together.
+3. Double-click "Start Ember.command" on macOS or "Start Ember.bat" on Windows.
+   The launcher needs Python 3, checks that the app file is present, chooses an
+   available local port starting at 8765, and opens the app in your browser.
+ 4. Open Settings, connect to http://localhost:11434, and install or select
+     qwen3:8b. Ember will select qwen3:8b automatically when it is installed.
+    If the launcher prints a port other than 8765, allow that exact
+    http://127.0.0.1:<port> address in Ollama's local connection settings.
+
+UPDATING AN EXISTING COPY
+Close the old Ember launcher window and browser tab. Extract the newest package
+into a new folder, then launch the Start Ember file from that folder. Old folders
+and already-open tabs keep their old version. On Windows, the launcher is
+Start Ember.bat (Windows may hide the .bat extension); there is no .dat launcher.
+
+LEARNING, MEMORY, AND SPEED
+Ember does not change model weights or claim to retrain a model. Add a short
+memory for a preference, goal, or fact; Ember matches it against your latest
+prompt and recent questions, then includes up to three useful memories. It also
+routes up to two relevant enabled skills and up to 24 recent messages, capped at
+12,000 characters. Unicode-aware matching helps with non-English text. Choose an
+Adaptive, Step by step, Socratic, or Concise reply style. Learning rounds ask one
+question at a time and adjust based on your answers. Responses use an 8,192-token
+context window; Ollama keeps the model warm for five minutes. Actual speed and
+quality depend on the chosen model and hardware.
+
+GITHUB SKILLS
+In Skill library, search a topic or choose a popular category. Ember searches
+public GitHub projects and surfaces SKILL.md files in the most relevant results.
+GitHub's public search can be rate-limited and only indexes project names,
+descriptions, and READMEs; try a broader phrase when results are empty. Click
+Preview and review a skill before adding it. You can also paste a public GitHub
+link. Imported skills are untrusted text, not executable code. When enabled and
+relevant, their text is sent to the Ollama address you chose.
+
+MODEL CONTROLS
+Settings talks to Ollama's HTTP API for specific model actions.
+It does not run arbitrary Terminal or PowerShell commands. Installing a model
+downloads files to Ollama; deleting a model removes those local files. Chats,
+memories, and imported skills are not deleted when removing a model.
+
+FILE CREATION
+Ask Ember to make a file, or turn on "CREATE A FILE" before sending your request.
+Text-based files appear in the chat with a preview and a SAVE FILE button. Your
+browser asks where to save when supported; otherwise it uses the browser's normal
+downloads location. Ember cannot write into folders without your action. This
+version creates text-based files such as HTML, Markdown, CSV, JSON, and code; it
+does not generate binary PDFs, Office documents, or images.
+
+PRIVACY AND BACKUPS
+Prompts go to the Ollama address you set. Ember asks before connecting to a
+non-local address because prompts and context will leave this device. Chat
+history, learning memories, skills, progress, and reply style are stored in this
+browser. GitHub is contacted only when you search or preview a skill. Use Export
+backup before moving browsers or clearing data; model files are managed
+separately by Ollama. Do not save passwords, payment details, or other secrets
+as memories.
+
+If Ollama does not connect, confirm it is running and allows requests from the
+http://127.0.0.1:<port> address printed by the launcher. Keep the launcher window
+open while using Ember. If all ports from 8765 to 8785 are occupied, close an
+unused local server and start Ember again.
